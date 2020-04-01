@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- this is how to do comments-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Bath Project </title>
+        
+        <link rel= "stylesheet" href= "./project2.css"> 
+        <script src="./project2theDOM.js"></script>
+        
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="navigation">
+                <div id="searchbar">
+                    <input type="search" name="search" placeholder="Search">
+                    <input type="submit" value="Search" disabled>
+                </div>
+                <div id="homebar">
+                    <ul>
+                        <a href="./project2index.html"> Home </a>
+                        <a href="./comingsoonpage.html"> About </a>
+                        <a href="./staypage.html"> Stay </a>
+                        <a href="./foodpage.html" target="_blank"> Eat </a>
+                        <a href="./dopage.html"> Do </a>
+                        <a href="http://www.batheats.co.uk/" target="_blank"> Bath Eats blog</a>
+                        
+                    </ul> 
+                </div>
+
+            </div>
+
+
+            <header>
+                <div id="slide-show">
+                    <div class="mySlides w3-display-container w3-center">
+                        <img src="./bathheader.jpg" style="width: 1170px">
+                        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>Pultney Bridge</h3>  
+                        </div>
+                    </div>
+                    <div class="mySlides w3-display-container w3-center">
+                        <img src="./bathheader1.jpg" style="width: 1170px">
+                        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>The Roman Baths </h3>   
+                        </div>
+                    </div>
+                    <div class="mySlides w3-display-container w3-center">
+                        <img src="./bathheader2.jpg" style="width: 1170px">
+                        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3> The Royal Cresant </h3>   
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- font for bath thing-->
+                    <style>
+                        @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+                        </style>
+                
+                    <h1 class="w3-wide w3-center"> - Visit BATH -</h1>
+                    <p class="w3 wide w3-center"> A unique city, Bath is famous for its hot springs, Roman period baths, Medieval heritage and stately Georgian architecture.
+                        Bath is in the valley of the River Avon, 97 miles west of London and 11 miles southeast of Bristol. The city became a World Heritage site in 1987. </p>
+            </header>
+
+            <script>
+                // Automatic Slideshow - change image every 4 seconds
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 4000);    
+                }
+            </script>
+            <hr> <!-- these put faint lines on btw -->
+            <hr>
+            
+
+
+            <div id="content">
+                <ul>
+                    <a href="./staypage.html"> Where to stay </a>
+                    <a href="./foodpage.html"> Where to eat </a>
+                    <a href="./dopage.html"> What to do </a>
+                </ul>
+            </div>
+            <div id="contentphotos">
+                <ul>
+                    <li><img src="./stay.jpg" class="photos" /></li>
+                    <li><img src="./eat.jpg" class="photos" /></li>
+                    <li><img src="./do.jpg" class="photos" /></li>
+                </ul>
+            </div>
+
+        
+            <hr>
+                    <div id="contactt">
+                        <!-- The Contact Section -->
+                            <div class="w3-container w3-content w3-padding-20" style="max-width:800px" id="contact">
+                                <h3 class="w3-wide w3-center">Contact...</h3>
+                                
+                                <div class="w3-row w3-padding-32">
+                                    <div class="w3-col m6 w3-large w3-margin-bottom">
+                                        <i class="fa fa-map-marker" style="width:30px"></i> Bath, UK<br>
+                                        <i class="fa fa-phone" style="width:30px"></i> Phone: +44 151515<br>
+                                        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                                    </div>
+                                <div class="w3-col m6">
+                                    <form action="/action_page.php" target="_blank">
+                                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                                        <div class="w3-half">
+                                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                                        </div>
+                                        <div class="w3-half">
+                                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                                        </div>
+                                    </div>
+                                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                                    </form>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+            <footer>
+                Copyright &copy; Fyrne Sawyer
+            </footer>
+
+        
+        </div>
+    </body>
+
+
+</html>
